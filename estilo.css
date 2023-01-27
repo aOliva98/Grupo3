@@ -1,0 +1,22 @@
+.cuadrado {
+    width:600px;
+    height:600px;
+    position:absolute;
+    left: 35%;
+    right: 50%;
+    top: 20%;
+    background:rgb(255, 145, 0);
+}
+.text{
+  position: absolute;
+  font-size: 120px;
+  font-weight: bold;
+  left: 13%;
+  top: 52%;
+  font-family:Arial, Helvetica, sans-serif;
+  color: white;
+}
+.TM{
+  font-size: 50px;
+  font-weight: normal;
+}
