@@ -64,29 +64,28 @@ body {
 
 .Barra__icon1 {
   display: inline-block;
-  width: 2em;
-  height: 2em;
+  width: 3em;
+  height: 3em;
   float: right;
-  padding-right: 6mm;
-  margin-top: 3mm;
+  margin-right: 6mm;
+  margin-top: 4mm;
 }
 
 .Barra__icon2 {
   display: inline-block;
-  width: 3.5em;
-  height: 3.5em;
+  width: 5em;
+  height: 5em;
   float: right;
-  padding-right: 2mm;
-  margin-top: 0mm;
+  margin-right: 1mm;
 }
 
 .Barra__icon3 {
   display: inline-block;
-  width: 2em;
-  height: 2em;
+  width: 3em;
+  height: 3em;
   float: right;
   margin-right: 7.5%;
-  margin-top: 3mm;
+  margin-top: 4mm;
 }
 
 hr {
