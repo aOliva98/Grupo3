@@ -24,3 +24,65 @@ $general-color:#ff3ff8
     margin-left: 19em
 .Barra__icon--logo
     background-color: #b498b3
+
+body
+  background-color: #b498b3
+
+
+
+.Logo .menu
+  height: 100%
+  width: 35em
+  position: fixed
+  z-index: 1
+  top: 0
+  left:0
+  background-color: aliceblue
+  overflow-x: hidden
+  padding-top: 60px
+  transition: 0.5s
+
+
+.Logo .menu a 
+  padding: 8px
+  text-decoration: none
+  font-size:20px
+  color: black
+  display: block
+  transition: 0.3s
+
+.Logo .menu a:hover
+  color: #b498b3
+
+.Logo .menu .cerrar
+  position: absolute
+  top: 0
+  right: 25px
+  font-size: 26px
+  margin-left: 50px
+
+.abrir
+  font-size: 20px
+  cursor: pointer
+  background-color: #b498b3
+  color: aliceblue
+  padding: 10px 15px
+  border: none
+
+
+.abrir:hover
+  background-color: #b278c9
+
+
+#main
+  transition: margin-left .5s
+  padding: 20px
+
+
+@media screen and (max-height: 450px) 
+  .menu
+    padding-top: 15px
+  
+  .menu a
+    font-size: 18px
+  
