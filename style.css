@@ -24,9 +24,10 @@
   display: inline-block;
   width: 2em;
   height: 2em;
+  margin-left: 19em;
 }
 
-.Barra__icon--logo:hover {
+.Barra__icon--logo {
   background-color: #b498b3;
 }
 
