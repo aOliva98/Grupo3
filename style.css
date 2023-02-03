@@ -86,6 +86,19 @@ body {
   float: right;
   margin-right: 7.5%;
   margin-top: 4mm;
+  margin-top: 3mm;
+}
+
+.Barra__icon1:hover {
+  background-color: #ff3ff8;
+}
+
+.Barra__icon2:hover {
+  background-color: #ff3ff8;
+}
+
+.Barra__icon3:hover {
+  background-color: #ff3ff8;
 }
 
 hr {
@@ -94,7 +107,7 @@ hr {
   margin-left: 7.5%;
 }
 
-.Logo .menu {
+.Logo__menu .menu {
   height: 100%;
   width: 35em;
   position: fixed;
@@ -107,7 +120,7 @@ hr {
   transition: 0.5s;
 }
 
-.Logo .menu a {
+.Logo__menu .menu a {
   padding: 8px;
   text-decoration: none;
   font-size: 20px;
@@ -116,11 +129,11 @@ hr {
   transition: 0.3s;
 }
 
-.Logo .menu a:hover {
+.Logo__menu .menu a:hover {
   color: #b498b3;
 }
 
-.Logo .menu .cerrar {
+.Logo__menu .menu .cerrar {
   position: absolute;
   top: 0;
   right: 25px;
