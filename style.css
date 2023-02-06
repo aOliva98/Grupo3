@@ -57,4 +57,123 @@
   margin-top: 2em;
 }
 
+.Logo {
+  margin-left: 43%;
+}
+
+img {
+  width: 200px;
+  height: 140px;
+}
+
+body {
+  background-color: #b498b3;
+}
+
+.Barra__icon1 {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  float: right;
+  margin-right: 6mm;
+  margin-top: 4mm;
+}
+
+.Barra__icon2 {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  float: right;
+  margin-right: 1mm;
+}
+
+.Barra__icon3 {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  float: right;
+  margin-right: 7.5%;
+  margin-top: 4mm;
+  margin-top: 3mm;
+}
+
+.Barra__icon1:hover {
+  background-color: #ff3ff8;
+}
+
+.Barra__icon2:hover {
+  background-color: #ff3ff8;
+}
+
+.Barra__icon3:hover {
+  background-color: #ff3ff8;
+}
+
+hr {
+  border-color: rgb(37, 37, 37);
+  width: 85%;
+  margin-left: 7.5%;
+}
+
+.Logo__menu .menu {
+  height: 100%;
+  width: 35em;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.Logo__menu .menu a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.Logo__menu .menu a:hover {
+  color: #b498b3;
+}
+
+.Logo__menu .menu .cerrar {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 26px;
+  margin-left: 50px;
+}
+
+.abrir {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #b498b3;
+  color: aliceblue;
+  padding: 10px 15px;
+  border: none;
+}
+
+.abrir:hover {
+  background-color: #b278c9;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .menu {
+    padding-top: 15px;
+  }
+  .menu a {
+    font-size: 18px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
