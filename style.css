@@ -5,8 +5,10 @@
 }
 
 .Barra {
+  margin-top: -2em;
   display: inline-block;
-  background-color: rgba(241, 177, 220, 0.856);
+  position: fixed;
+  background-color: rgba(241, 177, 220);
   height: 2em;
   width: 100%;
   min-width: 100%;
@@ -19,13 +21,16 @@
   height: 2em;
   min-width: 1.5%;
   max-width: 3%;
+  transition: all 0.5s;
 }
 
 .Barra__icon:hover {
   background-color: #b278c9;
+  width: 2.8%;
 }
 
 .Barra__icon--logo {
+  background-color: rgba(241, 177, 220);
   display: inline-block;
   width: 2em;
   height: 2em;
@@ -47,6 +52,10 @@
 
 .Barra__icon--letras:hover {
   color: #fff;
+}
+.texto{
+
+  margin-top: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */
