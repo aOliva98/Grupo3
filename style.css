@@ -14,19 +14,18 @@
   min-width: 100%;
   min-height: 2em;
 }
-
 .Barra__icon {
   display: inline-block;
   width: 3%;
   height: 2em;
-  min-width: 1.5%;
+  min-width:25px;
   max-width: 3%;
-  transition: all 0.5s;
+  transition: all 0.7s;
 }
 
 .Barra__icon:hover {
   background-color: #b278c9;
-  width: 2.8%;
+  padding: 0.2%;
 }
 
 .Barra__icon--logo {
