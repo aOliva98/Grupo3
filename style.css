@@ -58,14 +58,11 @@
 }
 
 .Logo {
-  margin-left: 43%;
-}
-
-img {
+  left: 38%;
+  position: sticky;
   width: 200px;
   height: 140px;
 }
-
 body {
   background-color: #b498b3;
 }
@@ -163,8 +160,11 @@ hr {
 }
 
 #main {
+  position: relative;
+  left: 0;
+  background: grey;
+  display: inline-block;
   transition: margin-left 0.5s;
-  padding: 20px;
 }
 
 @media screen and (max-height: 450px) {
