@@ -176,6 +176,7 @@ hr {
   font-family: "verdana";
   font-size: large;
   padding: 1.5em;
+  margin-bottom: 5em;
 }
 
 .img2 {
@@ -183,4 +184,3 @@ hr {
   height: 400px;
 }
 
-/*# sourceMappingURL=style.css.map */
