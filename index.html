@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pataka</title>
     <link rel="stylesheet" href="style.css">
+
     
 </head>
 <body>
@@ -33,12 +34,40 @@
 
     <div id="menuVertical" class="menu">
         <a href="javascript:void(0)" class="cerrar" onclick="closeNav()">&times;</a>
+        <button onclick="document.getElementById('entrar').style.display='block'">Entra</button>
+       
+        <!--Arreglar lo del login-->
+        
+       <div id="entrar" class="login">
+            <span onclick="document.getElementById('entrar').style.display='none'"class="cerrarE" title="cerrar login">&times;</span>
+            <form class="contenido">
+                <div class="contenido1">
+                  Nombre:
+                  <input type="text" placeholder="Introduzca su nombre" name="nombre" required>
+            
+                  Contrase&ntilde;a:
+                  <input type="password" placeholder="Introduzca una contrase&ntilde;a" name="contrase&ntilde;a" required>
+            
+                  <button type="submit">Entrar</button>
+                </div>
+                <div class="contenido2">
+                  <button type="button" onclick="document.getElementById('entrar').style.display='none'" class="cancelar">Cancelar</button>
+                  <span class="contrase&ntilde;a"><a href="#">Recuperar contrase&ntilde;a </a></span>
+                </div>
+              </form>
+            </div>
+        <hr></hr>
         <h2>PARTNERS</h2>
         <a href="#">Innovaci&oacute; LG</a>
         <a href="#">Tecnolog&iacute;a Midea</a>
         <a href="#">Tecnolog&iacute;a Vodafone</a>
         <a href="#">Planeta Fantasy</a>
-        <input type="text">
+        <div class="buscador">
+            <form>
+              <input type="text" placeholder="Buscar en Pataka.." name="Buscar">
+              <button type="submit">Buscar</button>
+            </form>
+           </div>
     </div>
           
     <div id="main">
