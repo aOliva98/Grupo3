@@ -6,6 +6,5 @@ function closeNav() {
     document.getElementById("menuVertical").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
-var modal=document.getElementById('entrar');
 
 
