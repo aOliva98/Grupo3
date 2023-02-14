@@ -1,8 +1,10 @@
 function openNav() {
-    document.getElementById("menuVertical").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("menuVertical").style.width = "500px";
+    document.getElementById("main").style.marginLeft = "500px";
 }
 function closeNav() {
     document.getElementById("menuVertical").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
-  }
+}
+
+

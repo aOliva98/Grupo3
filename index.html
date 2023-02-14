@@ -4,12 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pataca</title>
+    <title>Pataka</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="Materiales\logo_v2_mini.png">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script> 
+
+    
 </head>
 <body>
+  <script src="./javaS.js"></script>
+
+  <div id="menuVertical" class="menu">
+      <a href="javascript:void(0)" class="cerrar" onclick="closeNav()">&times;</a>
+      <!--LOGIN-->
+      <form  method="post">
+        <div class="contenedor">
+          <h2 class="login1">Login</h2>
+          <label for="nombre"><i class="fa fa-user fa-lg">Usuario:</i>
+          <input type="text" placeholder="Indique su nombre" name="nombre" required>
+          </label>
+          <label for="password"><i class="fa fa-lock fa-lg">Contrase&ntilde;a:</i>
+          <input type="password" placeholder="Introducir contrase&ntilde;a" name="password" required>
+          </label>
+          <a href="#" class="link">Recuperar contrase&ntilde;a?</a>
+          <button type="reset" class="log">Login</button>
+        </div>
+      </form>
+      
+      <hr></hr>
+      <!--CONTENIDO-->
+      <ul><h2 class="items">PARTNERS</h2>
+        <li><a href="#">Innovaci&oacute; LG</a></li>
+        <li><a href="#">Tecnolog&iacute;a Midea</a></li>
+        <li><a href="#">Tecnolog&iacute;a Vodafone</a></li>
+        <li><a href="#">Planeta Fantasy</a></li>
+      </ul>
+      <!--BUSCADOR-->
+        <div class="buscador">
+            <form>
+              <input type="text" placeholder="Buscar en Pataka.." name="Buscar">
+              <button type="submit" class="fa fa-search fa-3x" ></button>
+            </form>
+           </div>
+  </div>
+          
+  <div id="main">
+     <button class="abrir" onclick="openNav()">☰ Men&uacute; </button>
+  </div>
 
   <div id="button-up">
     <i class="fas fa-chevron-up"></i>
@@ -52,5 +94,6 @@
       <br>
     </div>
 <script src="scrollUp.js"></script>
+
 </body>
 </html>
