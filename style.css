@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-
 .Barra {
   display: inline-block;
   background-color: rgba(241, 177, 220, 0.856);
@@ -102,7 +101,6 @@ body {
   background-color: #ff3ff8;
 }
 
-
 hr {
   border-color: rgb(37, 37, 37);
   width: 85%;
@@ -196,6 +194,7 @@ form .login1 {
 
 form label {
   margin-bottom: 25px;
+  font-size: 17px;
   color: #487BD4;
 }
 
@@ -221,6 +220,7 @@ form .log {
   font-size: 20px;
   border-radius: 15px;
 }
+
 .Articulos {
   background-color: #46a2fd;
   text-align: center;
