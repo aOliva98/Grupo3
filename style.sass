@@ -1,63 +1,326 @@
-$general-color:#ff3ff8
-    
 *
     padding: 0
     margin: 0
-
-.Barra
-    display: inline-block
-    background-color: rgb(37, 37, 37)
-    height: 2em
-    width: 100%
-
-.Barra__icon
-    display: inline-block
-    width: 2em
-    height: 2em
-
-.Barra__icon:hover
-    background-color: #b278c9
-.Barra__icon--logo
-    display: inline-block
-    width: 2em
-    height: 2em
-    margin-left: 19em
-.Barra__icon--logo
-    background-color: #b498b3
-.Logo
-  margin-left: 43%
-
-img
-  width: 200px
-  height: 140px
+    font-family: 'Rajdhani', sans-serif
 
 body
-  background-color: #b498b3
+    background:#93d2eb
 
-.Barra__icon1 
-  display: inline-block
-  width: 2em
-  height: 2em
-  float: right
-  padding-right: 6mm
-  margin-top: 3mm
-.Barra__icon2
-  display: inline-block
-  width: 3.5em
-  height: 3.5em
-  float: right
-  padding-right: 2mm
-  margin-top: 0mm
-.Barra__icon3
-  display: inline-block
-  width: 2em
-  height: 2em
-  float: right
-  margin-right: 7.5%
-  margin-top: 3mm
+.nav_responsive
+    display: none
 
-hr
- border-color: rgb(37, 37, 37)
- width: 85%
- margin-left: 7.5%
+.nav
+    background: rgb(204,252,255)
+    background: linear-gradient(90deg, rgba(204,252,255,1) 1%, rgba(42,200,246,1) 17%, rgba(0,212,255,1) 35%, rgba(55,196,243,1) 50%, rgba(204,252,255,1) 100%)
+    height: 40px
+
+.nav__ul
+    margin-left: 25.5%
+    margin-right: 20%
+
+.nav__ul__li
+    padding: 10px
+    display: inline-block
+    margin-left: 10px
+    margin-right: 10px
+
+.nav__ul__li a
+    text-decoration: none
+    color: #fff
+    padding: 5px
+
+.nav__ul__li > i
+    color: #fff
+
+.nav__ul__li:hover a
+    color:  rgb(4, 50, 102)
+
+.nav__ul__li:hover > i
+    color:  rgb(4, 50, 102)
+
+
+.nav__responsive
+    display: none
+
+.nav_responsive
+    background-color: #0277bd
+    height: 40px
+    position: absolute
+    width: 100%
+    height: 100%
+    top: -1000px
+    z-index: 10
+    transition: all 0.8s
+
+
+.nav__responsive__ul
+    margin-left: 20%
+    background-color: #0277bd
+
+.nav__responsive__ul__li
+    padding: 10px
+    display: block
+    background-color: #0277bd
+    border-bottom:1px solid white
+
+
+
+.nav__responsive__ul__li a
+    text-decoration: none
+    color: #fff
+    padding: 5px
+    transition: all 0.1s
+
+
+.nav__responsive__ul__li > i
+    color: #fff
+
+.nav__responsive__ul__li:hover a
+    color: rgb(4, 50, 102)
+
+.nav__responsive__ul__li:hover > i
+    color: rgb(4, 50, 102)
+
+.menu_bt
+    background: rgb(204,252,255)
+    background: linear-gradient(90deg, rgba(204,252,255,1) 1%, rgba(42,200,246,1) 17%, rgba(0,212,255,1) 35%, rgba(55,196,243,1) 50%, rgba(204,252,255,1) 100%)
+    padding: 10px
+    align-items:flex-end
+    position: absolute
+    top: 0px
+    display: block
+    width: 100%
+    color: #000
+    z-index: 100
+    display: none
+
+.menu_bt > i
+    transition: 1s
+
+.container__logo
+    background-color: rgb(209, 253, 253)
+    position: absolute
+    display: block
+    height: 120px
+    width: 70%
+    margin-left: 15%
+    margin-right: 15%
+    box-sizing: border-box
+    border-radius: 20px
+    border: 2px solid rgb(189, 230, 230)
+    
+
+.container__logo-main
+    width: 100px
+    height: 100px
+    margin-left: 45%
+    padding-top: 10px
+    
+
+.container_redes
+    background-color: aqua
+    display: inline-block
+    height: 50px
+    width: 50px
+    position: relative
+    border-radius: 100%
+    left: 90%
+    top: 13px
+    border: 2px solid snow
+    z-index: 150
+
+.container_redes:hover > i
+    color: #0368a3
+
+.container_redes:hover
+    background-color: rgb(61, 226, 226)
+    border: 2px solid #0368a3
+
+.redes
+    height: 40px
+    width: 40px
+    position: absolute
+    top: 0px
+    right: 5%
+    display: none
+    transition: all 300ms ease !important
+
+.container_redes > a
+    transition: all 1s
+
+.container_redes i 
+    display: inline-block
+    height: 60px
+    width: 60px
+    position: relative
+    left: 3px
+    top: 2px
+    padding: 14px
+    color: #fff
+
+
+.boton
+    display: inline-block
+    background-color: #a2c1ff
+    position: absolute
+    left: 0%
+    right: 100%
+    width: 50px
+    height:50px
+    border-radius: 100%
+    margin:10px
+    border: 1px solid #fff
+    z-index: 100
+    transition: border 0.1s,left 1.4s
+    box-sizing: border-box
+
+.boton > i
+    color: white
+    position: relative
+    top: 30%
+    left: 31%
+    font-size: 20px
+    transition: 1s
+
+.boton:hover
+    background-color: #77a6ec
+
+.boton:hover i
+    color: rgb(21, 26, 104)
+
+.menu
+    display: inline-block
+    height: 100%
+    width: 16%
+    background-color: #447fcc
+    position: absolute
+    left: -1000px
+    z-index: 10
+    transition: all 1s
+
+.menu__ul__li
+    text-decoration: none
+    margin-bottom: 5%
+    margin-left: 5%
+    display: block
+    border-bottom: 1px solid #fff
+
+.menu__ul
+    margin-top: 25%
+
+.menu__ul li:hover
+    color: #fff
+
+@media only screen and (max-width: 825px)  
+    .nav
+        display: none
+    
+    .nav_responsive
+        display: block
+    
+    .menu_bt
+        display: block
+    
+    .container__logo
+        width: 100%
+        top:40px
+        margin: 0
+        border-radius: 0
+    
+    .container_redes
+        display: none
+    
+    .container_redes:hover > i
+        display: none
+    
+    .container_redes:hover
+        display: none
+    
+    .boton
+        display: none
+    
+    .menu
+        display: none
+    
+    .container_articulos
+        top: 70px
+    
+    .Articulos
+        background-color: #a3d6eb
+        text-align: center
+        margin-top: 5em
+        margin-left: 0 !important
+        width: 95% !important
+        font-family: "verdana"
+        font-size: large
+        padding: 1.5em
+        margin-bottom: 5em
+       
+    
+
+#button-up 
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    background: #46a2fd
+    display: flex
+    justify-content: center
+    align-items: center
+    color: aliceblue
+    font-size: 20px
+    position: fixed
+    bottom: 50px
+    right: 50px
+    cursor: pointer
+    border: 4px solid transparent
+    transition: all 300ms ease
+    transform: scale(0)
+    z-index: 400
+
+  
+  #button-up:hover 
+    transform: scale(1.1)
+    border-color: rgba(0, 0, 0, 0.1)
+  
+  .Articulos 
+    background-color: #a3d6eb
+    text-align: center
+    width: 50%
+    margin-left: 25%
+    margin-top: 5em
+    font-size: large
+    padding: 1.5em
+    margin-bottom: 5em
+  
+  
+  .img2 
+    width: 100%
+    height: 400px
+  
+  hr
+      margin-left: 26%
+      margin-right: 25%
+      width: 50%
+      border-color: #000
+  
+  .container_articulos
+      position: absolute
+  
+.h3
+    font-size: xx-large
+    text-align: center
+    color: #0368a3
+
+
+.img3 
+    width: 100%
+    height: 500px
+
+.img4 
+    width: 100%
+    height: 90px
+
+.img5 
+    width: 100%
+    height: 150px
 
