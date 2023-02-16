@@ -51,6 +51,7 @@ body{
     top: -1000px;
     z-index: 10;
     transition: all 0.8s;
+
 }
 .nav__responsive__ul{
     margin-left: 20%;
@@ -61,12 +62,15 @@ body{
     display: block;
     background-color: #0277bd;
     border-bottom:1px solid white;
+
+
 }
 .nav__responsive__ul__li a{
     text-decoration: none;
     color: #fff;
     padding: 5px;
     transition: all 0.1s;
+
 }
 .nav__responsive__ul__li > i{
     color: #fff;
@@ -139,6 +143,7 @@ body{
     top: 0px;
     right: 5%;
     display: none;
+    transition: all 300ms ease !important;
 }
 .container_redes > a{
     transition: all 1s;
@@ -250,6 +255,7 @@ body{
         font-size: large;
         padding: 1.5em;
         margin-bottom: 5em;
+       
     }
 }
 #button-up {
@@ -300,3 +306,21 @@ body{
   .container_articulos{
       position: absolute;
   }
+.h3{
+    font-size: xx-large;
+    text-align: center;
+    color: #0368a3;
+
+}
+.img3 {
+    width: 100%;
+    height: 500px;
+}
+.img4 {
+    width: 100%;
+    height: 90px;
+}
+.img5 {
+    width: 100%;
+    height: 150px;
+}
