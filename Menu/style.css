@@ -358,4 +358,70 @@ hr {
   height: 150px;
 }
 
+.menu .buscador input[type=text] {
+  padding: 3px;
+  margin-top: 20px;
+  font-size: 17px;
+  margin-right: 3%;
+  margin-left: 5%;
+  border: 2px solid #03112b;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.menu .buscador button {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #447fcc;
+  padding: 2%;
+  border: none;
+}
+
+.menu .contenedor {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 5% 5%;
+}
+
+form .login1 {
+  color: #061e49;
+  font-size: 35px;
+  margin-top: 15%;
+  margin-bottom: 2%;
+}
+
+form label {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #b2c8ee;
+}
+
+form label input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #b2c8ee;
+  background-color: #447fcc;
+  color: white;
+  padding: 5% 5%;
+  font-size: 15px;
+}
+
+form .link {
+  color: #b2c8ee;
+  margin-bottom: 15px;
+}
+
+form .log {
+  color: white;
+  border: 2px solid #3267c2;
+  background-color: #b2c8ee;
+  padding: 5px;
+  cursor: pointer;
+  font-size: 17px;
+  border-radius: 20px;
+  margin-right: 3%;
+  margin-left: 5%;
+}
+
 /*# sourceMappingURL=style.css.map */

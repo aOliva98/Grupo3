@@ -41,12 +41,29 @@
     </div>
     <div class="boton" id="boton"><i id="icono" class="fa-solid fa-bars"></i></div>
     <div class="menu" id="menu">
-        <ul class="menu__ul">
-            <li class="menu__ul__li">Algo</li>
-            <li class="menu__ul__li">Algo2</li>
-            <li class="menu__ul__li">Algo3</li>
-            <li class="menu__ul__li">Algo4</li>
-        </ul>
+        <form  method="post">
+            <div class="contenedor">
+              <h2 class="login1">Login</h2>
+              <label for="nombre"><i class="fa fa-user fa-lg"></i>
+              <input type="text" placeholder="Indique su nombre" name="nombre" required>
+              </label>
+              <label for="password"><i class="fa fa-lock fa-lg"></i>
+              <input type="password" placeholder="Introducir contrase&ntilde;a" name="password" required>
+              </label>
+              <a href="#" class="link">Recuperar contrase&ntilde;a?</a>
+              <button type="reset" class="log">Login</button>
+            </div>
+          </form>
+              
+          <hr></hr>
+        
+          <!--BUSCADOR-->
+             <div class="buscador">
+                <form>
+                  <input type="text" placeholder="Buscar en Pataka.." name="Buscar">
+                  <button type="submit" class="fa fa-search fa-3x" ></button>
+                </form>
+             </div>
     </div>
     <div class="container_redes" id="boton_redes">
         <i class="fa-solid fa-icons"></i>
