@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Recursos/PatakaNombreMini.png">
+</head>
+
+<body id="cuerpo">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4cac93665d.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+    <nav class="nav">
+        <ul class="nav__ul">
+            <li class="nav__ul__li"><i class="fa-solid fa-house"></i><a href="index.html">Inicio</a></li>
+            <li class="nav__ul__li"><i class="fa-brands fa-android"></i><a href="android.html">Android</a></li>
+            <li class="nav__ul__li"><i class="fa-brands fa-apple"></i><a href="iphone.html">Iphone</a></li>
+            <li class="nav__ul__li"><i class="fa-sharp fa-solid fa-shirt"></i><a href="moda.html">Moda</a></li>
+            <li class="nav__ul__li"><i class="fa-solid fa-gamepad"></i><a href="juegos.html">Juegos</a>
+            </li>
+            <li class="nav__ul__li"> <i class="fa-solid fa-video"></i><a href="peliculas.html">Peliculas</a></li>
+            <li class="nav__ul__li"><i class="fa-solid fa-dice-d20"></i><a href="ia.html">IA</a></li>
+            <li class="nav__ul__li"><i class="fa-solid fa-shield-halved"></i><a href="cyber.html">Cyberseguridad</a></li>
+        </ul>
+    </nav>
+    <div class="menu_bt" id="bt_menu"><i id="icono_menu_lateral" class="fa-solid fa-bars"></i></div>
+    <nav class="nav_responsive" id="menu1">
+        <ul class="nav__ul__responsive">
+            <li class="nav__responsive__ul__li"><i class="fa-solid fa-house"></i><a href="index.html">Inicio</a></li>
+            <li class="nav__responsive__ul__li"><i class="fa-brands fa-android"></i><a href="android.html">Android</a>
+            </li>
+            <li class="nav__responsive__ul__li"><i class="fa-brands fa-apple"></i><a href="iphone.html">Iphone</a></li>
+            <li class="nav__responsive__ul__li"><i class="fa-sharp fa-solid fa-shirt"></i><a href="moda.html">Moda</a>
+            </li>
+            <li class="nav__responsive__ul__li"><i class="fa-solid fa-game-console-handheld"></i><a
+                    href="juegos.html">Juegos</a>
+            </li>
+            <li class="nav__responsive__ul__li"> <i class="fa-solid fa-video"></i><a href="peliculas.html">Peliculas</a>
+            </li>
+            <li class="nav__responsive__ul__li"><i class="fa-solid fa-dice-d20"></i><a href="ia.html">IA</a></li>
+            <li class="nav__responsive__ul__li"><i class="fa-solid fa-shield-halved"></i><a href="cyber.html">Cyberseguridad</a></li>
+        </ul>
+    </nav>
+    <div id="logo"></div>
+    <div class="container__logo">
+        <img class="container__logo-main" src="Recursos/PatakaNombre (2).png" alt="">
+    </div>
+    <div class="boton" id="boton"><i id="icono" class="fa-solid fa-bars"></i></div>
+    <div class="menu" id="menu">
+        <!--LOGIN-->
+        <form method="post">
+            <div class="contenedor">
+                <h2 class="login1">Login</h2>
+                <label for="nombre"><i class="fa fa-user fa-lg"></i>
+                    <input type="text" placeholder="Indique su nombre" name="nombre" required>
+                </label>
+                <label for="password"><i class="fa fa-lock fa-lg"></i>
+                    <input type="password" placeholder="Introducir contrase&ntilde;a" name="password" required>
+                </label>
+                <a href="#" class="link">Recuperar contrase&ntilde;a?</a>
+                <button type="reset" class="log">Login</button>
+            </div>
+        </form>
+
+        <hr>
+        </hr>
+
+        <!--BUSCADOR-->
+        <div class="buscador">
+            <form>
+                <input type="text" placeholder="Buscar en Pataka.." name="Buscar">
+                <button type="submit" class="fa fa-search fa-3x"></button>
+            </form>
+        </div>
+
+    </div>
+    <div class="container_redes" id="boton_redes">
+        <i class="fa-solid fa-icons"></i>
+        <a href="https://www.instagram.com/"><img class="redes" src="Recursos/Instagram.png" alt=""></a>
+        <a href="https://www.twitch.tv/"><img class="redes" src="Recursos/twitch.png" alt=""></a>
+        <a href="https://twitter.com/"><img class="redes" src="Recursos/twitter.png" alt=""></a>
+        <a href="https://www.youtube.com/?gl=ES&hl=es"><img class="redes" src="Recursos/youtube.png" alt=""></a>
+    </div>
+    <div id="progress-bar"></div>
+    <div id="button-up">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <header>
+        <h1>Lista de Películas</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#accion">Acción</a></li>
+                <li><a href="#drama">Drama</a></li>
+                <li><a href="#comedia">Comedia</a></li>
+                <li><a href="#terror">Terror</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio"></section>
+        <section id="accion">
+            <h2>Películas de Acción</h2>
+            <br>
+            <div class="movie-grid" id="action-movies">
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt="El señor de los anillos: El retorno del rey">
+                    <h3>El señor de los anillos: El retorno del rey</h3>
+                    <p>Duración: 201 minutos</p>
+                    <p>Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and
+                        Sam as they approach Mount Doom with the One Ring.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt=" Origen">
+                    <h3> Origen</h3>
+                    <p>Duración: 148 minutos</p>
+                    <p>A thief who steals corporate secrets through the use of dream-sharing technology is given the
+                        inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the
+                        project and his team to disaster.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjhkMDM4MWItZTVjOC00ZDRhLThmYTAtM2I5NzBmNmNlMzI1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY209_CR1,0,140,209_AL_.jpg"
+                        alt="Salvar al soldado Ryan">
+                    <h3>Salvar al soldado Ryan</h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>Tras el desembarco de Normandía, un grupo de soldados estadounidenses cruza las líneas enemigas
+                        para rescatar a un paracaidista cuyos hermanos han muerto en combate.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMGU2NzRmZjUtOGUxYS00ZjdjLWEwZWItY2NlM2JhNjkxNTFmXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt="Terminator 2: El juicio final">
+                    <h3>Terminator 2: El juicio final</h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>A cyborg, identical to the one who failed to kill Sarah Connor, must now protect her 10-year old
+                        son John from an even more advanced and powerful cyborg.</p>
+
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYmJmM2Q4NmMtYThmNC00ZjRlLWEyZmItZTIwOTBlZDQ3NTQ1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt="La vida es bella">
+                    <h3>La vida es bella</h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>When an open-minded Jewish waiter and his son become victims of the Holocaust, he uses a perfect
+                        mixture of will, humor and imagination to protect his son from the dangers around their camp.
+                    </p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTk4ODQzNDY3Ml5BMl5BanBnXkFtZTcwODA0NTM4Nw@@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt="El caballero oscuro: La leyenda renace">
+                    <h3>El caballero oscuro: La leyenda renace</h3>
+                    <p>Duración: 170 minutos</p>
+                    <p>Eight years after the Joker's reign of chaos, Batman is coerced out of exile with the assistance
+                        of the mysterious Selina Kyle in order to defend Gotham City from the vicious guerrilla
+                        terrorist Bane.</p>
+                </div>
+            </div>
+        </section>
+        <section id="drama">
+            <h2>Películas de Drama</h2>
+            <br>
+            <div class="movie-grid" id="drama-movies">
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY98_CR1,0,67,98_AL_.jpg"
+                        alt="El padrino">
+                    <h3>El padrino</h3>
+                    <p>Duración: 201 minutos</p>
+                    <p>The aging patriarch of an organized crime dynasty in postwar New York City transfers control of his clandestine empire to his reluctant youngest son.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX67_CR0,0,67,98_AL_.jpg"
+                        alt=" La lista de Schindler">
+                    <h3> La lista de Schindler</h3>
+                    <p>Duración: 148 minutos</p>
+                    <p>In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_UX67_CR0,0,67,98_AL_.jpg"
+                        alt="12 hombres sin piedad">
+                    <h3>12 hombres sin piedad</h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>The jury in a New York City murder trial is frustrated by a single member whose skeptical caution forces them to more carefully consider the evidence before jumping to a hasty verdict.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY98_CR0,0,67,98_AL_.jpg"
+                        alt="Pulp Fiction">
+                    <h3>Pulp Fiction</h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.</p>
+
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX67_CR0,0,67,98_AL_.jpg"
+                        alt="El club de la lucha">
+                    <h3>El club de la lucha</h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>An insomniac office worker and a devil-may-care soap maker form an underground fight club that evolves into much more.
+                    </p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX67_CR0,0,67,98_AL_.jpg"
+                        alt=" Alguien voló sobre el nido del cuco">
+                    <h3> Alguien voló sobre el nido del cuco</h3>
+                    <p>Duración: 170 minutos</p>
+                    <p>In the Fall of 1963, a Korean War veteran and criminal pleads insanity and is admitted to a mental institution, where he rallies up the scared patients against the tyrannical nurse.</p>
+                </div>
+            </div>
+        </section>
+        <section id="comedia">
+            <h2>Películas de Comedia</h2>
+            <br>
+            <div class="movie-grid" id="comedy-movies">
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZjA3YjdhMWEtYjc2Ni00YzVlLWI0MTUtMGZmNTJjNmU0Yzk2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX140_CR0,0,140,209_AL_.jpg"
+                        alt="Aterriza como puedas">
+                    <h3>Aterriza como puedas</h3>
+                    <p>Duración: 88 minutos</p>
+                    <p>A man afraid to fly must ensure that a plane lands safely after the pilots become sick.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNWY1NDI0ZTQtMjJiNS00ODY4LWE1NmUtYTkwNzY3NWQ0ZDZjXkEyXkFqcGdeQXVyMTM0NTc2NDgw._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt=" Virgen a los 40 ">
+                    <h3> Virgen a los 40 </h3>
+                    <p>Duración: 118 minutos</p>
+                    <p>Goaded by his buddies, a nerdy guy who's never "done the deed" only finds the pressure mounting
+                        when he meets a single mother.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZDQwMjNiMTQtY2UwYy00NjhiLTk0ZWEtZWM5ZWMzNGFjNTVkXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR1,0,140,209_AL_.jpg"
+                        alt=" Dos tontos muy tontos ">
+                    <h3> Dos tontos muy tontos </h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>After a woman leaves a briefcase at the airport terminal, a dumb limo driver and his dumber
+                        friend set out on a hilarious cross-country road trip to Aspen to return it.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BY2VkMDg4ZTYtN2M3Yy00NWZiLWE2ODEtZjU5MjZkYWNkNGIzXkEyXkFqcGdeQXVyODY5Njk4Njc@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt="Supersalidos ">
+                    <h3>Supersalidos </h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>Two co-dependent high school seniors are forced to deal with separation anxiety after their plan
+                        to stage a booze-soaked party goes awry.wo co-dependent high school seniors are forced to deal
+                        with separation anxiety after their plan to stage a booze-soaked party goes awry.</p>
+
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BODMwMDY2YzUtNGFiNS00NDA1LWI4YzMtYzVmM2RlZTk3NGVlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt="Yo, yo mismo e Irene ">
+                    <h3>Yo, yo mismo e Irene </h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>A nice-guy cop with Dissociative Identity Disorder must protect a woman on the run from a corrupt ex-boyfriend and his associates.
+                    </p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNzA1MTk1MzY0OV5BMl5BanBnXkFtZTgwNjkzNTUwMDE@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt=" Bienvenidos al fin del mundo ">
+                    <h3> Bienvenidos al fin del mundo </h3>
+                    <p>Duración: 170 minutos</p>
+                    <p>Five friends who reunite in an attempt to top their epic pub crawl from twenty years earlier unwittingly become humanity's only hope for survival.</p>
+                </div>
+            </div>
+        </section>
+        <section id="terror">
+            <h2>Películas de Terror</h2>
+            <br>
+            <div class="movie-grid" id="horror-movies">
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYWFlZGY2NDktY2ZjOS00ZWNkLTg0ZDAtZDY4MTM1ODU4ZjljXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX140_CR0,0,140,209_AL_.jpg"
+                        alt=" El exorcista ">
+                    <h3> El exorcista </h3>
+                    <p>Duración: 201 minutos</p>
+                    <p>When a 12 year old girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her daughter.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BZWFlYmY2MGEtZjVkYS00YzU4LTg0YjQtYzY1ZGE3NTA5NGQxXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX140_CR0,0,140,209_AL_.jpg"
+                        alt="El resplandor">
+                    <h3> El resplandor</h3>
+                    <p>Duración: 148 minutos</p>
+                    <p>A family heads to an isolated hotel for the winter where a sinister presence influences the father into violence, while his psychic son sees horrific forebodings from both past and future.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BOWM4NTY2NTMtZDZlZS00NTgyLWEzZDMtODE3ZGI1MzI3ZmU5XkEyXkFqcGdeQXVyNzI1NzMxNzM@._V1_UY209_CR3,0,140,209_AL_.jpg"
+                        alt="Déjame entrar">
+                    <h3>Déjame entrar</h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>Oskar, an overlooked and bullied boy, finds love and revenge through Eli, a beautiful but peculiar girl.</p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt="Psicosis">
+                    <h3>Psicosis</h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run and checks into a remote motel run by a young man under the domination of his mother.</p>
+
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMTM3NjA1NDMyMV5BMl5BanBnXkFtZTcwMDQzNDMzOQ@@._V1_UY209_CR0,0,140,209_AL_.jpg"
+                        alt="Expediente Warren: The Conjuring">
+                    <h3>Expediente Warren: The Conjuring</h3>
+                    <p>Duración: 110 minutos</p>
+                    <p>Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.
+                    </p>
+                </div>
+                <div class="movie">
+                    <img src="https://m.media-amazon.com/images/M/MV5BYTFkM2ViMmQtZmI5NS00MjQ2LWEyN2EtMTI1ZmNlZDU3MTZjXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX140_CR0,0,140,209_AL_.jpg"
+                        alt=" 28 días después">
+                    <h3> 28 días después</h3>
+                    <p>Duración: 170 minutos</p>
+                    <p>Four weeks after a mysterious, incurable virus spreads throughout the UK, a handful of survivors try to find sanctuary.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
