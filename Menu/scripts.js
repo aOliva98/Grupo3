@@ -95,3 +95,51 @@ window.onscroll = function () {
 
 };
 });
+function ScrollProgress() {
+    const scrollPosition = window.pageYOffset;
+    const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (scrollPosition / pageHeight) * 100;
+    return progress;
+  }
+  
+ 
+  function Progress() {
+    const progressBar = document.getElementById('progress-bar');
+    const progress = Math.floor(ScrollProgress());
+    progressBar.innerText = `Progreso: ${progress}%`;
+  }
+  
+
+  window.addEventListener('scroll', () => {
+    Progress();
+  });
+  const slider = document.querySelector(".slider");
+  const output = document.querySelector(".slider-value");
+  
+  slider.addEventListener("input", function() {
+    let value = "€" + this.value;
+    output.value = value;
+    output.textContent = value;
+  });
+  
+  output.textContent = "€" + slider.value;
+  
+  function calculateValue(position, width, min, max) {
+    let percentage = (position / width) * 100;
+    let value = Math.round((max - min) * percentage / 100);
+    return "€" + value;
+  }
+  
+  slider.addEventListener("mousemove", function(event) {
+    let position = event.clientX - this.getBoundingClientRect().left;
+    let width = this.offsetWidth;
+    let value = calculateValue(position, width, 0, 1000);
+    output.style.left = position + "px";
+    output.textContent = value;
+  });
+  
+  slider.addEventListener("mouseleave", function() {
+    output.textContent = "€" + this.value;
+    output.style.left = this.value / 1000 * this.offsetWidth + "px";
+  });
+  
